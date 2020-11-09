@@ -8,9 +8,17 @@
 </head>
 <body>
   <?php include VIEW_PATH . 'templates/header_logined.php'; ?>
-  
 
   <div class="container">
+  <form action="index.php" method="get" class="text-right">
+    <select name="sort">
+      <option value="new" selected>新着順</option>
+      <option value="cheap">価格の安い順</option>
+      <option value="expensive">価格の高い順</option>
+    </select>
+    <input type="submit" value="変更">
+  </form> 
+
     <h1>商品一覧</h1>
     <?php include VIEW_PATH . 'templates/messages.php'; ?>
 
